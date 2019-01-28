@@ -31,6 +31,9 @@
     uiInfo.navcBarHidden = YES;
     uiInfo.topViewBgColor = UIColor.redColor;//导航栏背景颜色
     
+    //是否直接显示转人工按钮
+    //uiInfo.isShowTansfer = NO;
+    
 //    uiInfo.topViewTextColor = UIColor.blackColor;//导航栏文字颜色(返回，标题)
     
 //    //自定义返回按钮上的图片

@@ -33,8 +33,10 @@ public class App extends Application {
             appkey = "d7ab4728ed784260b5655fce924a75e0";
         }
         SobotApi.initSobotSDK(this, appkey, SobotSPUtil.getStringData(this, "sobot_partnerId", ""));
+
         initUi();
 //        customMenu();
+
         initLocationModule();
     }
 
