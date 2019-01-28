@@ -34,21 +34,25 @@
 //    uiInfo.topViewTextColor = UIColor.blackColor;//导航栏文字颜色(返回，标题)
     
 //    //自定义返回按钮上的图片
-//    NSString *backPath = [[NSBundle mainBundle]pathForResource:@"back@2x.png" ofType:nil];
+    //NSString *backPath = [[NSBundle mainBundle]pathForResource:@"back@2x.png" ofType:nil];
 //    uiInfo.topBackNolImg = backPath;
 //    uiInfo.topBackSelImg = backPath;
 //
 //    //自定义more按钮上的图片
-//    NSString *morePath = [[NSBundle mainBundle]pathForResource:@"more@2x" ofType:@"png"];
+    //NSString *morePath = [[NSBundle mainBundle]pathForResource:@"more@2x" ofType:@"png"];
 //    uiInfo.moreBtnNolImg = morePath;
 //    uiInfo.moreBtnSelImg = morePath;
+    
+    //人工客服按钮上的图片
+//    uiInfo.turnBtnNolImg = morePath;
+//    uiInfo.turnBtnSelImg = morePath;
     
     
     [[ZCLibClient getZCLibClient] setLibInitInfo:initInfo];
     
     // 智齿SDK初始化启动事例
     [ZCSobot startZCChatVC:uiInfo with:self target:nil pageBlock:^(id object, ZCPageBlockType type) {
-        
+        NSLog(@"%zd", type);
     } messageLinkClick:^(NSString *link) {
         
     }];
