@@ -31,10 +31,14 @@
     uiInfo.navcBarHidden = YES;
     uiInfo.topViewBgColor = UIColor.redColor;//导航栏背景颜色
     
+    //自定义返回按钮上文字
+    //uiInfo.topBackTitle = @"BB";
+    
     //是否直接显示转人工按钮
     //uiInfo.isShowTansfer = NO;
     
-//    uiInfo.topViewTextColor = UIColor.blackColor;//导航栏文字颜色(返回，标题)
+    //uiInfo.topViewTextColor = UIColor.blackColor;//导航栏文字颜色(返回，标题)
+    uiInfo.titleFont = [UIFont systemFontOfSize:40];
     
 //    //自定义返回按钮上的图片
     //NSString *backPath = [[NSBundle mainBundle]pathForResource:@"back@2x.png" ofType:nil];
